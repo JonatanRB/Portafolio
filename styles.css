@@ -5,6 +5,17 @@
     font-family: monospace;
 }
 
+Body{
+    background-color: rgb(26, 32, 45);
+}
+
+.img-bar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .img1{
     width: 100px;
     height: 100px;
