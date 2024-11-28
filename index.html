@@ -4,72 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JonatanRB</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <aside class="barra">
-        <header class="barra-header">
-            <a href="#" class="img-header">
-                <img class = "img-bar" src="HackNero.jpg" alt="JonatanRB">
+<div class="sidebar">
+    <div class="top">
+        <div class="logo">
+            <i class="bx bx-code-block"></i>
+            <span>JonaranRB</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <div class="yo">
+        <img src="HackNero2.png" alt="logo carnero" class="logo-img">
+        <div>
+            <p class="bold">Ingenieria</p>
+            <p>TIC's</p>
+        </div>
+    </div>
+    <ul>
+        <li>
+            <a href="#">
+                <i class="bx bxs-invader"></i>
+                <span class="nav-objeto">Inicio</span>
             </a>
-            <button class="toggler">
-                <span class="material-symbols-rounded">chevron_left</span>
-            </button>
-        </header>
+            <span class="tooltip">Inicio</span>
+        </li>
 
-        <nav class="barra-nav">
-            <ul class="nav-lista primera-nav">
-                <li class="objeto.nav">
-                    <a href="#" class="nav-link">
-                        <span class="material-symbols-rounded">emoji_people</span>
-                    <span class="nav-label">Info</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <li>
+            <a href="#">
+                <i class="bx bx-user-circle"></i>
+                <span class="nav-objeto">Hola</span>
+            </a>
+            <span class="tooltip">Hola</span>
+        </li>
 
-        <nav class="barra-nav">
-            <ul class="nav-lista primera-nav">
-                <li class="objeto.nav">
-                    <a href="#" class="nav-link">
-                        <span class="material-symbols-rounded">neurology</span>
-                    <span class="nav-label">Conocimientos</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <li>
+            <a href="#">
+                <i class="bx bx-brain"></i>
+                <span class="nav-objeto">Conocimientos</span>
+            </a>
+            <span class="tooltip">Conocimientos</span>
+        </li>
 
-        <nav class="barra-nav">
-            <ul class="nav-lista primera-nav">
-                <li class="objeto.nav">
-                    <a href="#" class="nav-link">
-                        <span class="material-symbols-rounded">book</span>
-                    <span class="nav-label">Historial</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <li>
+            <a href="#">
+                <i class="bx bxs-graduation"></i>
+                <span class="nav-objeto">Educación</span>
+            </a>
+            <span class="tooltip">Educación</span>
+        </li>
 
-        <nav class="barra-nav">
-            <ul class="nav-lista primera-nav">
-                <li class="objeto.nav">
-                    <a href="#" class="nav-link">
-                        <span class="material-symbols-rounded">star</span>
-                    <span class="nav-label">Sobre mí</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </aside>
+        <li>
+            <a href="#">
+                <i class="bx bx-book-bookmark"></i>
+                <span class="nav-objeto">Historial</span>
+            </a>
+            <span class="tooltip">Historial</span>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="bx bx-search-alt-2"></i>
+                <span class="nav-objeto">Mas Sobre My</span>
+            </a>
+            <span class="tooltip">Mas Sobre My</span>
+        </li>
+    </ul>
+</div>
+
 
 <main>
-    <section>
+    <section class="sec-info">
         <div class="contenedor">
             <div class="info">
-                <h1>Jonstán RB</h1>
-                <h2>Soy Tecnico en Soporte y Mantenimiento de Equipos de Computo. 
+                <h1>Jonatán RB</h1>
+                <h2 class="sec-info">Soy Tecnico en Soporte y Mantenimiento de Equipos de Computo. 
                     Actualmente estudio Ingenieria en Tecnologias de la informacion y comunicación. 
                     Mexicano con gustos por la programación y la ciberseguridad.</h2>
                     <span>
@@ -116,4 +128,14 @@
 </main>
 
 </body>
+
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function(){
+        sidebar.classList.toggle('active')
+    };
+</script>
+
 </html>
