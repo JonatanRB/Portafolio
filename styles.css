@@ -127,7 +127,6 @@ header {
     width: 8rem;
     height: 8rem;
     margin-bottom: 1rem;
-    transform: rotate(30deg);
 }
 
 .btn-linkedin {
@@ -459,8 +458,9 @@ header {
 
 .txt_info img {
     padding: 10px;
-    width: 40%;
-    height: 70%;
+    width: 30%;
+    height: 90%;
+    border-radius: 20px;
 }
 
 .info {
@@ -475,6 +475,7 @@ header {
 }
 
 .info p {
+    font-weight: bold;
     color: white;
 }
 
@@ -491,11 +492,39 @@ footer {
     flex-direction: column;
 }
 
+footer h2 {
+    font-weight: bold;
+    color: #111111;
+}
+
+footer h2 span {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
 .iconos_rs {
     height: 50px;
     width: 50px;
     background-position: center;
     background-size: 40%;
+    margin: 10px;
+}
+
+.iconos_rs a {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.contenidos li {
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    list-style: none;
+    margin: 10px;
+}
+
+.copy {
+    color: #34afc5;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 @media (max-width: 600px) {
