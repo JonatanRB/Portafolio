@@ -228,20 +228,6 @@ body {
     transform: scale(1);
 }
 
-@media (max-width: 768px) {
-    .section-2 .box-container .box {
-        padding: 20px 10px; 
-    }
-
-    .section-2 .box-container .box h3 {
-        font-size: 16px; 
-    }
-
-    .section-2 .box-container .box p {
-        font-size: 12px; 
-    }
-}
-
 .timeline {
     min-height: 100vh;
     padding: 100px 15px;
@@ -319,4 +305,101 @@ body {
     color: #323232;
     font-size: 16px;
     font-weight: 300 bolder;
+}
+
+.carrusel {
+    max-height: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.carrusel::-webkit-scrollbar{
+    width: 15px;
+}
+
+.carrusel::-webkit-scrollbar-track {
+    background-color: #181e29;
+}
+
+.carrusel::-webkit-scrollbar-thumb {
+    background-color: rgb(83, 173, 157);
+    border-radius: 10px;
+    border: 7.5px solid transparent;
+    background-clip: padding-box;
+}
+
+.carrusel .carta {
+    min-width: 40%;
+    height: 250px;
+    line-height: 250px;
+    background-color: aliceblue;
+    margin-right: 15px;
+    border-radius: 5px;
+    border-color: aliceblue solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.carta img {
+    width: 40%;
+    height: 100%;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.29);
+    border-radius: 5px;
+    order: 1;
+}
+
+.carta .txt-carta {
+    width: 55%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    order: 2;
+}
+
+.carta h3, .carta p {
+    margin: 5px 0;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.carta h3::-webkit-scrollbar{
+    width: 0px;
+}
+
+.carta p::-webkit-scrollbar{
+    width: 0px;
+}
+
+.txt_info {
+    width: 85%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+}
+
+.txt_info img {
+    padding: 10px;
+    width: 40%;
+    height: 70%;
+}
+
+.info {
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    gap: 10px;
+}
+
+.info p {
+    color: white;
 }
