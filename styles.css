@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 html {
@@ -454,7 +453,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .txt_info img {
@@ -496,4 +496,203 @@ footer {
     width: 50px;
     background-position: center;
     background-size: 40%;
+}
+
+@media (max-width: 600px) {
+    .section-2 .box-container .box {
+        padding: 20px 10px; 
+    }
+
+    .section-2 .box-container .box h3 {
+        font-size: 16px; 
+    }
+
+    .section-2 .box-container .box p {
+        font-size: 12px; 
+    }
+}
+
+@media(max-width: 600px){
+    .timeline-objs::before{
+        left: 7px;
+    }
+    .timeline-obj:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-obj:nth-child(odd), .timeline-obj:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline-dot{
+        left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .carrusel .carta {
+        min-width: 100%; 
+        height: 500px; 
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .carta img {
+        width: 60%; 
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .carta .txt-carta {
+        width: 80%; 
+    }
+}
+
+@media(max-width: 600px){
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgb(40, 40, 47);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {
+        margin-top: 40px;
+    }
+    .menu li a {
+        padding: 10px;
+    }
+    .open-menu, .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .txt_info {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .txt_info img {
+        width: 60%; 
+        height: auto; 
+    }
+
+    .info {
+        width: 90%; 
+        padding: 5px;
+    }
+
+    .info p {
+        font-size: 14px; 
+    }
+}
+
+/*@media (min-width: 600px) and (max-width: 1024px)*/
+@media (min-width: 600px) and (max-width: 1024px) {
+    .section-2 .box-container .box {
+        padding: 20px 10px; 
+    }
+
+    .section-2 .box-container .box h3 {
+        font-size: 16px; 
+    }
+
+    .section-2 .box-container .box p {
+        font-size: 12px; 
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .timeline-objs::before{
+        left: 7px;
+    }
+    .timeline-obj:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-obj:nth-child(odd), .timeline-obj:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline-dot{
+        left: 0;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .carrusel .carta {
+        min-width: 85%; 
+        height: 300px; 
+        flex-direction: row; 
+        text-align: center;
+    }
+
+    .carta img {
+        width: 45%; 
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .carta .txt-carta {
+        width: 90%; 
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px){
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgb(40, 40, 47);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {
+        margin-top: 40px;
+    }
+    .menu li a {
+        padding: 10px;
+    }
+    .open-menu, .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .txt_info {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .txt_info img {
+        width: 60%; 
+        height: auto; 
+    }
+
+    .info {
+        width: 90%; 
+        padding: 5px;
+    }
+
+    .info p {
+        font-size: 14px; 
+    }
 }
